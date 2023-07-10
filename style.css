@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Rubik&family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(15deg, red, yellow);
+}
+
+/* ---------------- profile card -----------------  */
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  padding: 100px 50px 40px;
+  border-radius: 20px;
+}
+
+/* ----------------profile image --------------- */
+
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 4px solid rgb(255, 152, 67);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 30px rgba(239, 81, 38, 0.7);
+}
+
+.profile-image-container img {
+  width: 100%;
+  max-width: 100%;
+  transform: scale(1);
+}
+
+/* ----------------- about me ------------ */
+.about {
+  margin-bottom: 12px;
+}
+
+.about i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.loc {
+  margin-bottom: 40px;
+  font-size: small;
+}
+
+.loc i {
+  font-size: 1em;
+}
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(255, 127, 35);
+}
+
+/* ------------------ Social icons ----------------  */
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social i {
+  color: white;
+  font-size: 1.2em;
+}
+.social .linkedin i {
+  font-size: 1em;
+}
+
+.social button {
+  border: none;
+  outline: none;
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social button:hover {
+  transform: scale(1.2);
+}
+
+.social button.linkedin {
+  background: linear-gradient(45deg, #00a0dc, #0077b5);
+}
+.social button.ig {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.social button.github {
+  background: linear-gradient(45deg, #777777, #000000);
+}
+
+/* ------------ know more button ---------------- */
+.knowmore {
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fd5949;
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: transform 0.3s;
+}
+
+.knowmore:hover {
+  background-color: #fd5849d0;
+
+  transform: scale(1.1);
+}
+
+/* --------- Responsive ---------------- */
+
+@media screen and (max-width: 440px) {
+  .card-container {
+    width: 90%;
+  }
+}
